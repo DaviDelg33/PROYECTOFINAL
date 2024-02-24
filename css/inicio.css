@@ -1,0 +1,175 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Estilos para el título de inicio */
+.titulo-inicio h1 {
+    font-size: 5vw;
+    background: -webkit-linear-gradient(45deg, #4caf50, #81c784);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.titulo-inicio h2 {
+    font-size: 2.5vw;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Ajustes responsivos para tamaños de pantalla más pequeños */
+@media (max-width: 768px) {
+    .titulo-inicio h1 {
+        font-size: 9vw;
+    }
+
+    .titulo-inicio h2 {
+        font-size: 5vw;
+    }
+}
+
+/* Estilos del contenedor principal y ajustes de video de fondo */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+/* Estilos del formulario y su contenedor */
+.contenedor-todo {
+    width: 100%;
+    top: 80%;
+    max-width: 800px;
+    position: relative;
+    left: 10%;
+}
+
+.contenedor-login-register {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+}
+
+.contenedor-login-register form {
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+.contenedor-login-register form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: green;
+}
+
+.contenedor-login-register form input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor-login-register form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #4CAF50;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border-radius:18px;
+}
+.formulario-login {
+    opacity: 1;
+    display: block;
+}
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.contenedor {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registro {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 5;
+    transform-origin: 100% 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+    .contenedor-todo {
+        margin-top: 10%;
+    }
+
+    .contenedor-formularios {
+        width: 10%;
+    }
+}
+.boton-abrir-formulario {
+    position: fixed; 
+    right: 0;
+    top: 50%; 
+    z-index: 10; 
+    cursor: pointer; 
+    padding: 20px;
+    background-color: #4CAF50; 
+    color: white; 
+    font-size: 24px; 
+    border-radius: 10px 0 0 10px; 
+    transform: translateY(-50%); 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); 
+}
+
+.boton-abrir-formulario::before {
+    content: '\f0da'; 
+    font-family: FontAwesome; 
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.registro {
+    transform: translateX(100%); 
+    transition: transform 0.5s ease; 
+    width: 37%;
+}

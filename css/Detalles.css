@@ -1,0 +1,105 @@
+body {
+    font-family: 'Amazon Ember', Arial, sans-serif;
+    background-color: #EAEDF0;
+    margin: 0;
+    padding: 0;
+}
+
+.detalle-producto {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #FFFFFF;
+    margin: 2%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.detalle-producto img {
+    max-width: 100%;
+    object-fit: contain;
+    flex-basis: 40%;
+    min-width: 300px;
+    height: auto;
+    margin: 2%;
+}
+.imagen{
+    border-radius:18px; 
+}
+
+.movida {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 4%;
+}
+
+.detalle-producto h2 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.detalle-producto h3 {
+    font-size: 24px;
+    color: #B12704;
+    margin-top: 5px;
+}
+
+.detalle-producto .precio {
+    font-size: 32px; /* Tamaño aumentado para el precio */
+    font-weight: bold;
+    color: #B12704; /* Hace que el precio destaque */
+    margin: 20px 0; /* Espaciado ajustado */
+}
+
+.detalle-producto p, .detalle-producto .descripcion {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.btn-comprar {
+    background-color: greenyellow;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.btn-comprar:hover {
+    background-color: #F7CA00;
+}
+
+@media screen and (max-width: 768px) {
+    .detalle-producto {
+        flex-direction: column;
+    }
+
+    .detalle-producto img {
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .movida {
+        padding: 15px;
+    }
+
+    .detalle-producto h2 {
+        font-size: 24px;
+    }
+
+    .detalle-producto h3, .detalle-producto .precio {
+        font-size: 20px; /* Ajuste para la marca y el precio en pantallas pequeñas */
+    }
+
+    .detalle-producto p, .detalle-producto .descripcion {
+        font-size: 14px;
+    }
+}
