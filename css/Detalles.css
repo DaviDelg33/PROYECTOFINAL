@@ -37,14 +37,14 @@ body {
 }
 
 .detalle-producto h2 {
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 600;
 }
 
 .detalle-producto h3 {
     font-size: 24px;
     color: #B12704;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .detalle-producto .precio {
@@ -55,21 +55,22 @@ body {
 }
 
 .detalle-producto p, .detalle-producto .descripcion {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
 }
 
 .btn-comprar {
     background-color: greenyellow;
     border: none;
-    padding: 10px 16px;
+    padding: 10px 20px;
     border-radius: 20px;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
     transition: background 0.3s ease;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-right: 20px;
+    font-size: 18px;
 }
 
 .btn-comprar:hover {

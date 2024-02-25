@@ -46,31 +46,37 @@ main {
 
 .contenedor {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     margin-top: 2%;
     border-radius: 14px;
+    height: auto;
+}
+
+.Informacion, .Imagen {
+    width: auto;
+    height: auto;
+    flex-direction: column; 
 }
 
 .Informacion {
-    width: 110%;
+    width: 70%; 
     box-sizing: border-box;
-    padding: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #f0f0f0;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5%;
+    margin-right: 2%;
 }
 
 .Imagen {
-    width: 33%;
+    flex-grow: 1; 
     box-sizing: border-box;
-    margin-left: 20px;
 }
-
 .img {
-    width: 100%;
-    height: 81%;
-    margin-bottom: 5%;
+    max-width: auto;
+    height: auto;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -103,7 +109,7 @@ li {
 }
 
 .Imagen .carrusel img {
-    width: 100%; 
+    width: auto; 
     height: auto; 
     max-width: 500px; 
     max-height: 355px; 
@@ -125,7 +131,7 @@ li {
     color: white;
 }
 .barra{
-    width: 100%;
+    width: 100;
     height: auto;
     background-color: #f0f0f0;
     margin-top: 2%;
@@ -151,4 +157,15 @@ li {
     margin-top: 2%;
     width: 460px;
     height: 700px;
+}
+.tienda {
+    padding: 20px; /* Añade un relleno alrededor del contenido de cada tienda */
+    margin-bottom: 20px; /* Separa visualmente cada tienda */
+}
+
+.tienda-imagen {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de su contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir el espacio asignado */
+    max-height: 300px; /* Limita la altura de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
 }

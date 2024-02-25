@@ -7,7 +7,7 @@ h2 {
     margin: 0 auto;
     padding: 20px;
     display: flex;
-    flex-direction: row; /* Ensure that the default layout is row */
+    flex-direction: row; 
 }
 
 .flex-container {
@@ -38,13 +38,13 @@ h2 {
 }
 
 
-/* Ajuste para la sección de comentarios */
+/* para los comentarios */
 .comentarios {
-    margin-top: 50px; /* Aumenta el espacio antes de los comentarios */
-    margin-bottom: 50px; /* Aumenta el espacio después de los comentarios */
-    padding: 20px; /* Espacio interno alrededor del texto de los comentarios */
-    background: #f0f0f0; /* Opcional: fondo para destacar la sección */
-    border-radius: 10px; /* Opcional: bordes redondeados */
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+    padding: 20px; 
+    background: #f0f0f0; 
+    border-radius: 10px; 
 }
 
 .companies h5 {
@@ -60,12 +60,17 @@ h2 {
     padding: 10px;
     margin-bottom: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     margin-top: 5px;
+    font-size: 22px;
+}
+.company-btn a{
+    color: inherit; /* Hace que el color del texto sea el mismo que el del elemento padre */
+    text-decoration: none; /* Elimina el subrayado */
+    display: block; 
 }
 
-.company-btn:hover {
-    background-color: #6fff00;
+.company-btn:hover a {
+    color: green; 
 }
 
 .products-container {
@@ -73,7 +78,7 @@ h2 {
     flex-wrap: wrap;
     gap: 20px; /* Asegura espacio entre productos */
     margin-top: 75px;
-    justify-content: center; /* Centra los productos */
+    justify-content: center; 
 }
 
 .product {
@@ -101,24 +106,21 @@ h2 {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #555;
+    background-image: linear-gradient(to top, #006400, #00ff00); /* Degrado de verde oscuro a verde claro */
     padding: 10px;
     box-sizing: border-box;
     transition: opacity 0.3s;
     opacity: 0;
-    pointer-events: none;
+    color: #f5f5dc;
 }
-
 .product h3, .product p {
     margin: 0;
     justify-content: center;
 }
-.product p{
+.product p {
     font-size: 20px;
-    color: red;
-}
-.product:hover{
-    background-color: #b2f595;
+    color: black; 
+    font-weight: 600; 
 }
 .product img {
     width: 100%;

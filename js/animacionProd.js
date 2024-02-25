@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     var products = document.querySelectorAll('.product');
-
+    // Itera sobre cada elemento en la colección 'products'.
     products.forEach(function(product) {
         var details = product.querySelector('.product-details');
 

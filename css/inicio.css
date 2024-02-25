@@ -1,11 +1,10 @@
-body, html {
+body{
     margin: 0;
     padding: 0;
     width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* Estilos para el título de inicio */
 .titulo-inicio h1 {
     font-size: 5vw;
     background: -webkit-linear-gradient(45deg, #4caf50, #81c784);
@@ -16,10 +15,8 @@ body, html {
 .titulo-inicio h2 {
     font-size: 2.5vw;
     color: #fff;
-    margin-top: 20px;
 }
 
-/* Ajustes responsivos para tamaños de pantalla más pequeños */
 @media (max-width: 768px) {
     .titulo-inicio h1 {
         font-size: 9vw;
@@ -162,8 +159,6 @@ main {
 }
 
 .boton-abrir-formulario::before {
-    content: '\f0da'; 
-    font-family: FontAwesome; 
     display: inline-block;
     margin-right: 10px;
 }

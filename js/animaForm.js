@@ -15,13 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     botonMostrarRegistro.addEventListener('click', function (e) {
-        e.preventDefault(); // Previene la acción por defecto
+        e.preventDefault(); 
         formularioLogin.style.display = 'none'; // Oculta el formulario de login
         formularioRegistro.style.display = 'block'; // Muestra el formulario de registro
     });
 
     botonMostrarLogin.addEventListener('click', function (e) {
-        e.preventDefault(); // Previene la acción por defecto
+        e.preventDefault(); 
         formularioRegistro.style.display = 'none'; // Oculta el formulario de registro
         formularioLogin.style.display = 'block'; // Muestra el formulario de login
     });

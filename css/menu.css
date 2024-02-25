@@ -7,24 +7,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px; 
+    padding: 25px;
     background-color: #333;
     color: white;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .input-form {
     display: flex;
     align-items: center;
     margin-right: 20px;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 .search-input {
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: auto; 
-    flex-grow: 1; 
+    width: auto;
+    flex-grow: 1;
     padding: 8px;
     align-items: center;
 }
@@ -34,8 +34,8 @@ body {
     display: flex;
     gap: 30px;
     font-size: 22px;
-    padding: 0; /* Remueve el padding predeterminado */
-    margin: 0; /* Remueve el margen predeterminado */
+    padding: 0;
+    margin: 0; 
 }
 
 .indice a {
@@ -50,7 +50,7 @@ body {
 
 .logo {
     width: 100px;
-    margin-bottom: 10px; /* Asegura un margen en pantallas pequeñas */
+    margin-bottom: 10px; 
 }
 
 a img {
@@ -67,49 +67,62 @@ a img:hover {
     font-size: 22px;
     color: #fff;
 }
+#logoutButton {
+    padding: 10px 30px;
+    background-color: #f44336; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
 
+#logoutButton:hover {
+    background-color: #c0392b; 
+}
 @media (max-width: 768px) {
     .menuPrin {
         flex-direction: column;
-        align-items: flex-start; 
+        align-items: flex-start;
     }
 
     .input-form {
-        width: 100%; 
-        justify-content: space-between; 
+        width: 100%;
+        justify-content: space-between;
         margin-top: 10px;
     }
 
     .indice ul {
-        flex-direction: column; 
-        align-items: center; 
-        width: 100%; 
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .indice a {
-        display: block; 
-        padding: 10px 0; 
+        display: block;
+        padding: 10px 0;
     }
 }
 .nombreVentana {
     background-color: #333;
     opacity: 0.9;
-    border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    padding: 50px; 
-    position: absolute; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    position: absolute;
     right: 0;
     color: black;
     z-index: 1000;
+
 }
 
 .nombreVentana a {
-    display: block; 
-    text-decoration: none; 
-    padding: 8px 0; 
-    border-bottom: 1px solid #ddd; 
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
 }
 
-.nombre-usuario-ventana a:last-child {
-    border-bottom: none; 
-}
+
